@@ -11,6 +11,10 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        'user' => [
+            'identityClass' => 'common\models\User',
+            'enableAutoLogin' => true,
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -29,7 +33,16 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => true,
             'rules' => [
-
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => [
+                        'test' => 'test',
+                    ],
+                    'except' => ['delete', 'update'],
+                    'extraPatterns' => [
+                        'GET new' => 'new',
+                    ],
+                ],
             ],
         ],
     ],
