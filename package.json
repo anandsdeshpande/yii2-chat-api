@@ -1,0 +1,29 @@
+{
+  "name": "cd-notification-centre",
+  "version": "1.0.0",
+  "description": "Yii 2 Advanced Project Template ===============================",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CouponDunia/cd-notification-centre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CouponDunia/cd-notification-centre/issues"
+  },
+  "homepage": "https://github.com/CouponDunia/cd-notification-centre#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.1",
+    "underscore": "^1.8.3"
+  }
+}
